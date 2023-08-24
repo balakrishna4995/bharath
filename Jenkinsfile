@@ -9,6 +9,7 @@ pipeline {
         stage('clone_project_A') {
             steps {
                 echo 'clone project A'
+                sh 'yum install git -y'
                 git 'https://github.com/balakrishna4995/bharath.git'
             }
         }
